@@ -1,9 +1,8 @@
-function solution(n)
-{
-    return n
-        .toString()
-        .split('')
-        .reduce((sum, num) => {
-            return sum + Number(num);    
-        }, 0);
+function solution(n) {
+    let sum = 0;
+    let strN = n.toString();
+    for (let i = 0; i < strN.length; i++) {
+        sum += Number(strN[i]);
+    }
+    return sum;
 }
