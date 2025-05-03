@@ -11,3 +11,10 @@ function solution(phone_number) {
     }
     return answer;
 }
+
+// <추가 풀이방법>
+// function solution(phone_number) {
+//     const masked = "*".repeat(phone_number.length - 4);
+//     const last4 = phone_number.slice(-4);
+//     return masked + last4;
+// }
